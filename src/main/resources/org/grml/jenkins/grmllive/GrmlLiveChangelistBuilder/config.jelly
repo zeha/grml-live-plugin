@@ -1,0 +1,20 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+  <f:entry title="Output filename" field="outputFilename" description="Defaults to 'changelog.txt'.">
+    <f:textbox />
+  </f:entry>
+
+  <f:entry title="dpkg.list.old name" field="dpkgListOldName" description="dpkg.list to compare against. Defaults to 'dpkg.list.old'.">
+    <f:textbox />
+  </f:entry>
+
+  <f:entry title="Package Prefix" field="packagePrefix" description="No default. Example: 'grml'.">
+    <f:textbox />
+  </f:entry>
+
+  <f:entry title="Base Git URL" field="gitUrlBase" description="No default. Example: 'git://github.com/grml'.">
+    <f:textbox />
+  </f:entry>
+
+</j:jelly>
